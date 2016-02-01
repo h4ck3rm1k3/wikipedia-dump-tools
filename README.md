@@ -1,6 +1,6 @@
 Here you will find tools for making use of the monthly [XML dumps of Wikipedia](http://en.wikipedia.org/wiki/Wikipedia:Database_download). It is based on [WikiExtractor.py](http://medialab.di.unipi.it/Project/SemaWiki/Tools/WikiExtractor.py) from the Tanl package. Both packages address the challenge of incrementally processing <page> elements from the compressed .xml.bz2 file. While WikiExtractor.py extracts plain-text versions of the pages into smaller files for later processing, this package allows you to specify your own filtering and transformations to be run during extraction.
 
-To specify a page filter or transformation you simply name one or more fully qualified python function "paths" on the commange line. Each page is passed (as an lxml.etree Element) to each function in the series from last to first.
+To specify a page filter or transformation you simply name one or more fully qualified python function "paths" on the command line. Each page is passed (as an lxml.etree Element) to each function in the series from last to first.
 
 ```bash
     $ python -m wikitools.pageprocessor --help
